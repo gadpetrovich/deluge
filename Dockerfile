@@ -63,3 +63,4 @@ EXPOSE 58846
 #CMD /bin/bash
 #CMD systemd
 CMD ["/start.sh"]
+#ENTRYPOINT ["/start.sh"]
