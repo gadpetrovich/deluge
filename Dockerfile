@@ -26,5 +26,5 @@ EXPOSE 8112
 # Daemon
 EXPOSE 58846
 
-#CMD ["/start.sh"]
-ENTRYPOINT ["/start.sh"]
+CMD ["/start.sh"]
+#ENTRYPOINT ["/start.sh"]
