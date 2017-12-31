@@ -7,7 +7,12 @@
 ## Настройка
 Для сборки используется образ ubuntu:16.04.
 
-### Описание
+### Построение
+```bash
+docker build -t deluge .
+```
+
+### Запуск
 ```bash
 docker run -d --name <container name> \
   -p 53160:53160 \
@@ -23,7 +28,7 @@ docker run -d --name <container name> \
 
 ### Доступ к вэб-интерфейсу
 
-> <id-адрес>:8112
+> <ip-адрес>:8112
 
 Пароль по умолчанию: docker.
 
