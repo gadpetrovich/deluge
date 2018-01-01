@@ -5,10 +5,10 @@ LABEL build_version="ubuntu: ${VERSION} Build-date: ${BUILD_DATE}"
 LABEL maintainer="gadpetrovich <gadpetrovich@gmail.com>"
 
 RUN apt-get update -q && \
-    apt-get install -qy net-tools software-properties-common && \
+    apt-get install -qy software-properties-common && \
     add-apt-repository ppa:deluge-team/ppa && \
     apt-get update -q && \
-    apt-get install -qy deluged deluge-web && \
+    apt-get install -qy deluged deluge-web deluge-console && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 	
